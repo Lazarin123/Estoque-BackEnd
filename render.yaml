@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: estoque-ecommerce-api
+    env: node
+    region: oregon # ou frankfurt
+    plan: free
+    buildCommand: npm install && npx prisma generate && npm run build
+    startCommand: npm start
+    envVars:
+      - key: DATABASE_URL
+        sync: false

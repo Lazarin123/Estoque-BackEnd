@@ -1,0 +1,32 @@
+{
+  "name": "estoque-ecommerce-backend",
+  "version": "1.0.0",
+  "description": "API de e-commerce com controle de concorrência e transações ACID",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsup src --out-dir dist",
+    "start": "node dist/server.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate deploy"
+  },
+  "keywords": ["nodejs", "typescript", "postgresql", "prisma", "zod", "concurrency"],
+  "author": "Samuel Lazarin",
+  "license": "MIT",
+  "dependencies": {
+    "@prisma/client": "^5.14.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.12",
+    "prisma": "^5.14.0",
+    "tsup": "^8.1.0",
+    "tsx": "^4.10.5",
+    "typescript": "^5.4.5"
+  }
+}

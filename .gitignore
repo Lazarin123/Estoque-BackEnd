@@ -1,0 +1,29 @@
+# Dependências
+node_modules/
+jspm_packages/
+
+# Build e Produção
+dist/
+build/
+
+# Variáveis de Ambiente e Segredos
+.env
+.env.local
+.env.*.local
+
+# Banco de dados local do SQLite (caso use em testes futuros)
+*.db
+*.db-journal
+
+# Logs e arquivos temporários do Node / npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Sistema Operacional
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
